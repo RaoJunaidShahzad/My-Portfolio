@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links" id="nav-links" data-visible="false">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="close-icon" id="close-icon">
+        <i class="fas fa-times"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="home-content">
+        <h1>Hi, I'm Rao Mohammad Junaid Shahzad</h1>
+        <p>A passionate MERN Stack Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/myimage.jpg" alt="Profile Image" />
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a MERN stack developer with a passion for building web
+            applications. I love solving problems and creating user-friendly
+            experiences.
+          </p>
+          <p>
+            With a strong foundation in JavaScript, React, Node.js, and MongoDB,
+            I specialize in creating full-stack web applications that are both
+            functional and visually appealing.
+          </p>
+          <p>
+            When I'm not coding, I enjoy exploring new technologies,
+            contributing to open-source projects, and sharing my knowledge with
+            others.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+      <h2>Resume</h2>
+      <div class="resume-content">
+        <p>
+          Download my resume to learn more about my skills, experience, and
+          qualifications.
+        </p>
+        <div class="resume-buttons">
+          <a href="images/mycv.pdf" target="_blank" class="btn"
+            ><i class="fas fa-eye"></i> View Resume</a
+          >
+          <a href="images/mycv.pdf" download="Junaid.pdf" class="btn"
+            ><i class="fas fa-download"></i> Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill" data-percent="90">HTML</div>
+        <div class="skill" data-percent="85">CSS</div>
+        <div class="skill" data-percent="80">JavaScript</div>
+        <div class="skill" data-percent="75">React</div>
+        <div class="skill" data-percent="70">Node.js</div>
+        <div class="skill" data-percent="65">MongoDB</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="images/natours.png" alt="Project 1" />
+          <h3>Natours Website</h3>
+          <p>A tour website for purchasing tours</p>
+          <a href="https://natoursappbyrao.onrender.com" target="_blank"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/RaoJunaidShahzad/weatherapp1"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="images/restaurant.png" alt="Project 2" />
+          <h3>Restaurant Website</h3>
+          <p>
+            A basic food website for viewing various types of eating products.
+          </p>
+          <a href="#" target="_blank">Not Live Yet</a>
+          <a
+            href="https://github.com/RaoJunaidShahzad/Food-Restaurant"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <h2>Education</h2>
+      <div class="education-content">
+        <!-- BS Software Engineering -->
+        <div class="education-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>BS Software Engineering</h3>
+          <p><strong>COMSATS University, Sahiwal</strong></p>
+          <p>7th Semester (Current)</p>
+          <p>CGPA: 3.69/4.00</p>
+          <div class="cgpa-progress" aria-label="CGPA Progress: 92.25%">
+            <div class="progress-bar" style="width: 92.25%"></div>
+          </div>
+          <p>2022 - Present</p>
+        </div>
+
+        <!-- FSc Pre-Engineering -->
+        <div class="education-item">
+          <i class="fas fa-school"></i>
+          <h3>FSc Pre-Engineering</h3>
+          <p><strong>Punjab College, Pir Mahal</strong></p>
+          <p>Marks: 1043/1100</p>
+          <p>2019 - 2021</p>
+        </div>
+
+        <!-- Matriculation -->
+        <div class="education-item">
+          <i class="fas fa-book"></i>
+          <h3>Matriculation</h3>
+          <p><strong>Govt. High School</strong></p>
+          <p>Marks: 1058/1100</p>
+          <p>2017 - 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Junaid Rao. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
