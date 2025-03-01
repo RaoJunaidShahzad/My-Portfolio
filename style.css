@@ -66,13 +66,14 @@ a:hover {
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-links {
+        display: none;
+        /* Hide navbar links by default */
         position: fixed;
         top: 0;
-        right: -100%;
-        /* Hide off-screen */
+        right: 0;
         height: 100vh;
-        width: 100%;
-        /* Take full width */
+        width: 60%;
+        /* Adjust width as needed */
         background-color: rgba(30, 30, 30, 0.9);
         backdrop-filter: blur(10px);
         flex-direction: column;
@@ -83,8 +84,8 @@ a:hover {
     }
 
     .nav-links[data-visible="true"] {
-        right: 0;
-        /* Bring into view */
+        display: flex;
+        /* Show navbar links when menu is open */
     }
 
     .menu-icon {
